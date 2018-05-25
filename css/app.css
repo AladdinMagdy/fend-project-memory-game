@@ -91,14 +91,16 @@ h1 {
     margin-bottom: 10px;
 }
 
-.score-panel .stars {
+.stars {
     margin: 0;
     padding: 0;
     display: inline-block;
     margin: 0 5px 0 0;
+    /* color: #212529; */
+    color: #fd7e14;
 }
 
-.score-panel .stars li {
+.stars li {
     list-style: none;
     display: inline-block;
 }
@@ -107,3 +109,20 @@ h1 {
     float: right;
     cursor: pointer;
 }
+
+/*
+ * Styles for the Stopwatch
+ */
+
+.stopwatch {
+  display: inline-block;
+  margin: 0 35px;
+}
+
+.stopwatch span:not(:last-child)::after {
+   content: ':';
+ }
+
+ .modal-text {
+   padding-right: 20px;
+ }
